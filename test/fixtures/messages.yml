@@ -3,9 +3,9 @@
 one:
   content: MyText
   user: one
-  arena: one
+  hall: one
 
 two:
   content: MyText
   user: two
-  arena: two
+  hall: two
