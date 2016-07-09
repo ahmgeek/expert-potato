@@ -1,0 +1,27 @@
+ <div class="header clearfix">
+   <nav>
+     <ul class="nav nav-pills pull-xs-right">
+       <li class="nav-item active">
+         <%= link_to "Home", root_path, class: "nav-link" %>
+       </li>
+       <% if current_user %>
+         <li class="nav-item">
+           <%= link_to "New chat hall", new_hall_path, class: "nav-link" %>
+        </li>
+       <% end %>
+       <li class="nav-item">
+         <%= link_to "Halls", halls_path, class: "nav-link" %>
+       </li>
+       <% if current_user %>
+         <li class="nav-item">
+           <%= link_to "Sign Out", signout_path, method: "delete", class: "nav-link" %>
+         </li>
+       <% else %>
+         <li class="nav-item"><%= link_to "Sign Up", signup_path, class: "nav-link" %></li>
+         <li class="nav-item"><%= link_to "Sign In", signin_path, class: "nav-link" %></li>
+       <% end %>
+
+     </ul>
+   </nav>
+   <h3 class="text-muted">Expert Potato</h3>
+ </div>

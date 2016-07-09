@@ -16,6 +16,8 @@ gem 'coffee-rails', '~> 4.2'
 gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'bootstrap', '~> 4.0.0.alpha3'
+gem 'rails-assets-tether', '~> 1.1', '>= 1.1.1'
+
 
 # Managing Environment vars easily.
 gem 'dotenv-rails'
