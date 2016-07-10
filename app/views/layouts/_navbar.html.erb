@@ -1,9 +1,6 @@
  <div class="header clearfix">
    <nav>
      <ul class="nav nav-pills pull-xs-right">
-       <li class="nav-item active">
-         <%= link_to "Home", root_path, class: "nav-link" %>
-       </li>
        <% if current_user %>
          <li class="nav-item">
            <%= link_to "New chat hall", new_hall_path, class: "nav-link" %>
@@ -23,5 +20,7 @@
 
      </ul>
    </nav>
-   <h3 class="text-muted">Expert Potato</h3>
+   <h3 class="text-muted">
+     <%= link_to 'Expert Potato', root_path %>
+   </h3>
  </div>

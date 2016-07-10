@@ -1,6 +1,13 @@
 <div class="jumbotron">
-  <h1>Welcome to ExpertPotato, the messing chatt app!</h1>
+  <h1 class="display-3">Expert Potato</h1>
+  <h3>the messing chatt app!</h3>
   <%if current_user%>
     <p><span class="glyphicon glyphicon-heart"></span> Nice to see you, <%= current_user.username%> <span class="glyphicon glyphicon-heart"></span></p>
+    <%= link_to 'New chat Hall', new_hall_path, class: "btn btn-lg btn-success" %>
+  <% else %>
+    <p class="lead">Please, sign in to start creating halls and chatting with another humans..</p>
+    <%= link_to 'Sign in', signin_path, class: "btn btn-lg btn-success" %>
+    <p class="lead">Or, sign up if you wish..</p>
+    <%= link_to 'Sign up', signup_path, class: "btn btn-lg btn-warning" %>
   <%end%>
 </div>
