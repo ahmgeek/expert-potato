@@ -2,7 +2,7 @@ require 'test_helper'
 
 class UserTest < ActiveSupport::TestCase
   test "should save new user" do
-    user = User.new(username: 'ahmgeek')
+    user = users(:two)
     assert user.save
   end
 
