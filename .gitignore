@@ -19,6 +19,7 @@
 # Ignore ruby version.
 .ruby-gemset
 .ruby-version
+config/database.yml
 
 # Ignore uploads if there's.
 public/uploads
