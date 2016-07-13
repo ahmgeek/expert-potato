@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   root 'welcome#index'
 
+  mount ActionCable.server => '/cable'
 
   get '/signup', to: "registrations#new"
   post '/signup', to: "registrations#create"
@@ -12,7 +13,5 @@ Rails.application.routes.draw do
 
 
   resources :messages
-  resources :halls, param: :url
-
-
+  resources :halls, param: :permalink
 end
