@@ -11,10 +11,10 @@ class Hall < ApplicationRecord
   end
 
   def urlify
-    self.permalink = self.name.downcase.gsub(" ", "-")
+    self.permalink = self.name.downcase.gsub(" ", "-") unless self.name.nil?
   end
 
   def sanitize
-    self.name = self.name.strip
+    self.name = self.name.strip unless self.name.nil?
   end
 end
