@@ -2,10 +2,10 @@
 
 one:
   content: MyText
-  user: one
-  hall: one
+  user: 1
+  hall: 1
 
 two:
-  content: MyText
-  user: two
-  hall: two
+  content: MyText2
+  user: 2
+  hall: 2
