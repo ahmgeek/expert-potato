@@ -34,3 +34,6 @@ After bundler finishes installing, migrate the database and run the server.
 
 ## Tests
 you could run the test from the root of the app with `rake`
+
+### Running Demo ?
+[Here you go..](https://expert-potato.herokuapp.com)
