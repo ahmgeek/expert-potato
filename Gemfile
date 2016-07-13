@@ -33,3 +33,8 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'foreman'
 end
+
+group :test do
+  gem 'shoulda', '~> 3.5'
+  gem 'shoulda-matchers', '~> 2.0'
+end
